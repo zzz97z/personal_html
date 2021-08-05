@@ -4,120 +4,221 @@
     <meta charset="UTF-8">
     <title></title>
     <style>
-        html,body{
-            color: black;
+        html, body {
+            color: white;
             font-size: 14px;
             margin: 0 auto;
             background-color: #000000;
         }
-        .bigBox{
+
+        .bigBox {
             background-image: url("../img/header2.jpg");
-            background-repeat: no-repeat ;
-            background-size:70% 60%;
-            background-position:50% -20%;
+            background-repeat: no-repeat;
+            background-size: 70% 40%;
+            background-position: 50% -20%;
             width: 100%;
-            height: 1000px;
+            height: 1500px;
 
         }
-        .nav{
+
+        .nav {
             width: 60%;
-            height: 52%;
-            margin:0 auto;
+            height: 28%;
+            margin: 0 auto;
             color: white;
         }
-        .nav .advertising{
+
+        .nav .advertising {
             /*background-color: pink;*/
             width: 100%;
             height: 88%;
         }
 
-        .nav .menu{
+        .nav .menu {
             background-color: rgba(0, 0, 0, 0.81);
             width: 100%;
             height: 12%;
         }
-        .float_left{
+
+        .float_left {
             float: left;
         }
-        .float_right{
+
+        .float_right {
             float: right;
         }
-        .float_clear{
+
+        .float_clear {
             clear: both;
         }
-        .left{
+
+        .left {
             width: 20%;
             height: 100%;
             text-align: right;
         }
-        .mindle{
+
+        .mindle {
             /*background-color: rgba(255, 255, 255, 0.8);*/
             width: 60%;
             height: 100%;
+            padding-top:15px;
         }
-        .right{
+
+        .right {
             width: 20%;
             height: 100%;
         }
-        .lign_center{
-           padding-left:0;
-           font-weight: bold;
-           font-size: 24px;
-           height:100%;
+
+        .lign_center {
+            padding-left: 0;
+            font-weight: bold;
+            font-size: 24px;
+            height: 100%;
         }
-         .nav .menu .l_li{
+
+        .nav .menu .l_li {
             width: 100%;
             height: 100%;
         }
-        .menu .l_li .li_sty{
+
+        .menu .l_li .li_sty {
             padding-left: 15px;
             list-style-type: none;
 
         }
-       .right .right_advertising{
-           margin:10px;
-           width: 95%;
-           height: 45%;
-           background-color: white;
-           /*color:yellow;*/
+
+        .right .right_advertising {
+            margin: 10px;
+            width: 95%;
+            height: 45%;
+            background-color: white;
+            color: black;
         }
-        .right .date{
-            margin:0px 10px;
+
+        .right .date {
+            margin: 0px 10px;
             width: 95%;
             height: 25%;
-           background-color: white;
+            background-color: rgba(255, 255, 255, 0.85);
         }
-        .a_sty{
-            text-decoration:none;
-            color: white;
+
+        .a_sty {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.86);
         }
+        .foot{
+            width: 100%;
+            height: 100px;
+            background-color: #313131;
+        }
+       .date{
+           color:black;
+}
+        .nav_logo{
+
+        }
+
     </style>
 </head>
 <body>
-    <div class="bigBox">
-        <div class="nav">
-            <div class="advertising float_left "></div>
-            <div class="menu float_left">
-                <div class="l_li ">
-                    <ul class="lign_center float_left">
-                        <li class="float_left li_sty"><a href="#" class="a_sty">首页</a></li>
-                        <li class="float_left li_sty"><a href="#" class="a_sty">我的随笔</a></li>
-                        <li class="float_left li_sty"><a href="#" class="a_sty">联系我</a></li>
-                    </ul>
-                </div>
+<div class="bigBox">
+    <div class="nav">
+        <div class="advertising float_left "></div>
+        <div class="menu float_left">
+            <div class="l_li ">
+                <ul class="lign_center float_left">
+                    <li class="float_left li_sty nav_logo"><img style=" width: 50px;height: 30px;" src="../img/header.jpg" alt=""></li>
+                    <li class="float_left li_sty"><a href="#" class="a_sty">首页</a></li>
+                    <li class="float_left li_sty"><a href="#" class="a_sty">我的随笔</a></li>
+                    <li class="float_left li_sty"><a href="#" class="a_sty">联系我</a></li>
+                </ul>
             </div>
         </div>
-        <div class="left float_left">
-
-        </div>
-        <div class="mindle float_left"></div>
-        <div class="right float_right">
-            <div class="date"></div>
-            <div class="right_advertising">
-                <p><marquee behavior="100" direction="left">欢迎</marquee></div></p>
-	<p><marquee behavior="100" direction="left">欢迎</marquee></div></p>
-	<p><marquee behavior="100" direction="left">欢迎</marquee></div></p>
-        </div>
     </div>
+    <div class="left float_left">
+
+    </div>
+    <div class="mindle float_left">
+
+        <h1 style="color: #00abff;text-align: center"><b>软件测试的方法概括</b></h1>
+        <h2 style="color: #00abff;"><b>功能测试</b></h2>
+        <p>功能测试常用黑盒测试方法设计测试用例，比如常用边界值法，等价类划分法，错误推断法，场景法等</p>
+
+        <p>例：测试登录功能</p>
+
+        <p><b>1.边界值法</b></p>
+
+        <p>根据密码长度a=6设定6位数密码；尝试设定5位，7位数密码；则a取值是5,6,7</p>
+
+        <p>根据密码错误次数b=3，则b取值2,3,4</p>
+        <p><b>2.错误推断法**</b></p>
+
+        <p>根据输入密码账号判断是否存在于数据库账号密码；则输入数据库有效账号密码，输入错误的账号密码</p>
+
+        <p>根据账号数据类型不能是中文输入中文，输入Ww1_；根据密码数据类型是6位数字，输入AAAAAA，123456</p>
+
+        <p>根据账号密码不能为空输入空格，“”</p>
+
+        <p><b>3.等价类划分法</b></p>
+
+        <p>根据账号密码划分有效数据 账号：QAZwer，密码：123456</p>
+
+        <p>根据账号密码划分无效数据 账号：中文，密码：123456；账号：“”，密码：123456；账号：
+            ，密码：123456；账号：qqqq，密码：;密码：123456；账号：qqqq，密码："";密码：123456；账号：qqqq，密码：Hhhhh;密码：123456；账号：qqqq，密码：12345;
+        </p>
+        <p>对程序来说无意义的、不合理的输入数据集合
+        </p>
+        <p>**4.场景法**
+        </p>
+        <p>根据访问页面必须登录之后的逻辑，尝试跳过登录访问页面
+        </p>
+        <p>根据登录账号必须账号密码正确的逻辑输入账号密码
+        </p>
+        <h2 style="color: #00abff;"><p>接口测试
+        </p></h2>
+        <p>接口测试常用工具postman，jmeter，fiddler，Charles
+        </p>
+        <p>例：
+        </p>
+        <p>通过登录接口：localhost:8080/login
+        </p>
+        <p>请求方法：post，get，put。通常根据接口文档选择请求方法
+        </p>
+        <p>传参：{"account":123456,"password":123456} 注意：传参格式可以为json，form
+        </p>
+        <p>提交参数返回响应结果
+        </p>
+        <h2 style="color: #00abff;"><p>兼容测试
+        </p></h2>
+        <p>更换显示屏幕尺寸之后内容是否显示正常；
+        </p>
+        <p>是不是app不同的系统都可以安装并使用
+        </p>
+        <h2 style="color: #00abff;"><p>用户体验测试
+        </p></h2>
+        <p>在用户的角度使用，功能位置是否明确，防误触，防错误操作
+        </p>
+        <h2 style="color: #00abff;"><p> 性能测试
+        </p></h2>
+        <p>1.测试网站性能，查看网页数据加载完的时间
+        </p>
+        <p>2.大量数据的提交，查看响应时间
+        </p>
+        <p>3.获取大量的用户信息的时间</p>
+    </div>
+    <div class="right float_right">
+        <div class="date"><marquee behavior="scroll" scrollamount="8" direction="left">欢迎进来学习<br/>&nbsp;欢迎进来学习<br/>&nbsp;欢迎进来学习<br/>&nbsp;欢迎进来学习&nbsp;欢迎进来学习<br/>&nbsp;欢迎进来学习<br/>&nbsp;欢迎进来学习<br/>&nbsp;欢迎进来学习&nbsp;欢迎进来学习<br/>&nbsp;欢迎进来学习<br/>&nbsp;欢迎进来学习<br/>&nbsp;欢迎进来学习<br/>&nbsp;欢迎进来学习&nbsp;欢迎进来学习&nbsp;欢迎进来学习</marquee></div>
+        <div class="right_advertising">
+            <p style="color: red;font-size:24px">
+                <marquee behavior="alternate" direction="left">转载请备注来源</marquee></p>
+        </div>
+
+    </div>
+    <div class="foot float_clear ">
+        <p style="color: red;text-align:center;padding-top:15px;font-size:24px">转载请备注来源</p>
+        <p></p>
+    </div>
+</div>
 </body>
 </html>
